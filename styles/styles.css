@@ -10,6 +10,10 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    background-color: #34495e;
+}
+
 main {
     max-width: 840px;
 }
