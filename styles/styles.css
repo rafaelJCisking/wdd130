@@ -5,6 +5,9 @@ nav {
 
 nav a {
     color: #ecf0f1;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
 }
 
 main {
