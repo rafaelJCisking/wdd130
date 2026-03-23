@@ -1,39 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
-    background-color: #333;
+    background-color: darkblue;
     padding: 10px;
 }
 
 nav a {
-    color: #fff;
-    padding: 10px;
+    color: white;
     display: block;
+    padding: 10px;
 }
 
 h1 {
-    color: #222;
-
+    color: darkblue;
 }
 
-main img {
-    width: 100%;
+img {
+    width: 150px;
     height: auto;
-    border: 1px solid #000;
-    padding: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
 
+p {
+    padding: 0;
 }
 
 main {
     max-width: 840px;
 }
 
+main img {
+    width: 150px;
+    height: auto;
+    float: right;
+    margin-left: 10px;
+}
+
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: 320px;
+    position: relative;
     text-align: center;
 }
 
@@ -42,20 +53,25 @@ aside img {
     height: auto;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid #000;
-    padding: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-p {
-    padding: 0;
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+    color: white;
 }
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid black;
     text-align: center;
+}
+
+/* Class Selector */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
