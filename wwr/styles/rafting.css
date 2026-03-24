@@ -32,7 +32,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--secundary-color);
+    color: var(--secondary-color);
 }
 
 nav,
