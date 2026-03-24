@@ -73,6 +73,7 @@ article {
     width: 125px;
 }
 
-.socialmedia {
+.socialmedia,
+footer {
     text-decoration: #264653;
 }
