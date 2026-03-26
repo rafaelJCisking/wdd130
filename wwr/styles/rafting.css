@@ -25,8 +25,8 @@ body {
 header,
 main,
 footer {
-    width: 740px;
-    margin: 0;
+    width: 840px;
+    margin: 0 auto;
 }
 
 h1,
@@ -39,8 +39,8 @@ nav,
 p,
 section,
 article {
-    margin: 26px;
-    padding: 10px;
+    margin: 16px;
+    padding: 8px;
 }
 
 .hero {
@@ -51,10 +51,6 @@ article {
     display: block;
     width: 100%;
     height: auto;
-}
-
-.hero article {
-    position: absolute;
 }
 
 .hero h1 {
