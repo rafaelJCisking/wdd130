@@ -4,19 +4,33 @@
     box-sizing: border-box;
 }
 
+header,
+footer,
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
 }
 
 nav a {
     color: white;
     display: block;
     padding: 10px;
+    text-decoration: none;
+
 }
 
 h1 {
     color: darkblue;
+    margin: 10px 0;
+    border-bottom: 2px dotted black;
 }
 
 img {
@@ -31,8 +45,22 @@ p {
     padding: 0;
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 main {
-    max-width: 840px;
+    margin: 1rem;
+    grid-column: 2/3;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 main img {
@@ -42,12 +70,6 @@ main img {
     margin-left: 10px;
 }
 
-aside {
-    width: 320px;
-    position: relative;
-    text-align: center;
-}
-
 aside img {
     width: 200px;
     height: auto;
@@ -55,8 +77,8 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 47px;
-    left: 150px;
+    top: 20px;
+    left: 30%;
     color: white;
 }
 
