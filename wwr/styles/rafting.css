@@ -47,12 +47,6 @@ article {
     position: relative;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -64,9 +58,19 @@ article {
     color: #fff;
 }
 
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .hero article img {
     float: right;
     width: 125px;
+}
+
+.hero article {
+    position: absolute;
 }
 
 .socialmedia a {
