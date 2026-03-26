@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Rafting Trancura Chile</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description" content="Rafting Trancura Chile's webpage for booking rides">
+    <meta name="author" content="Rafael Valdes">
+    <style>
+        /* === 1. HEADER: CSS Grid Layout === */
+        header {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 2rem;
+            background: #004d40;
+            color: white;
+            border-bottom: 4px solid #00796b;
+        }
+
+        header img {
+            max-height: 60px;
+            width: auto;
+        }
+
+        /* === 2. NAV: CSS Flex Horizontal Layout === */
+        nav {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background: #00897b;
+        }
+
+        /* === 4. PAGE CONTENT: History & Adventure Sections === */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .hero img {
+            border-radius: 50%;
+            border: 4px solid #00796b;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            color: #004d40;
+            margin: 0.5rem 0;
+        }
+
+        .hero article {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #f5f5f5;
+            border-left: 4px solid #00796b;
+            border-radius: 0 8px 8px 0;
+        }
+
+        section h2 {
+            color: #004d40;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #00897b;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Adventure Gallery Grid */
+        .adventure-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        figure {
+            margin: 0;
+            text-align: center;
+            background: white;
+            padding: 0.5rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        figure:hover {
+            transform: translateY(-4px);
+        }
+
+        figure img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        figcaption {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 0.5rem;
+            font-weight: 500;
+        }
+
+        /* === 5. FOOTER: Social Icons Right & Horizontal === */
+        footer {
+            background: #004d40;
+            color: white;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            border-top: 4px solid #00796b;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .socialmedia {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .socialmedia a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .socialmedia a:hover {
+            background: #00897b;
+            transform: scale(1.1);
+        }
+
+        .socialmedia img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* === 6. OVERALL STYLING: Uniform Alignment, Repetition, Proximity === */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #fafafa;
+            color: #333;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .socialmedia {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1. HEADER with CSS Grid -->
+    <header>
+        <img src="images/z-splash.png" alt="Rafting Trancura Chile Logo">
+        <!-- 2. NAV with CSS Flex -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" aria-current="page">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="hero">
+            <img src="images/profile1.jpg" alt="Rafting team on the Trancura River" width="200"
+              height="200">
+            <h1>Rafting Trancura Chile</h1>
+            <p><strong>Live the Adventure in Pucón</strong></p>
+            <article>
+                <h2>Let's Go!</h2>
+                <img src="images/profile2.jpg" alt="Scenic view of the Trancura River"
+                  style="max-width:100%; height:auto; border-radius:6px; margin:1rem 0;">
+                <p>We are a company that loves nature and outdoor sports. Join us on incredible
+                    adventures! At Rafting Trancura Chile, we specialize in your safety while you
+                    enjoy the fresh summer breeze of southern Chile.</p>
+            </article>
+        </div>
+
+        <!-- 4. HISTORY SECTION with enhanced content -->
+        <section id="history">
+            <h2>Our History</h2>
+            <p>The Trancura River, nestled in the heart of Chile's Lake District near Pucón, has
+                been a premier destination for white-water rafting since the 1990s. Classified as
+                Class III-IV rapids, it offers an exhilarating yet accessible challenge for
+                adventurers worldwide.</p>
+            <p>Founded by local guides with decades of river experience, Rafting Trancura Chile
+                began as a small family operation. Today, we proudly share our passion for the
+                Andes, combining expert instruction with deep respect for the environment. Every
+                rapid tells a story — and we're honored to be part of yours.</p>
+        </section>
+
+        <!-- 4. ADVENTURE SECTION with enhanced content & gallery -->
+        <section id="adventure">
+            <h2>Adventure Awaits You!</h2>
+            <p>Whether you're a first-timer or a seasoned rafter, our guided trips deliver
+                unforgettable moments. Paddle through emerald waters, spot native birds, and feel
+                the rush of Chile's most thrilling river — all with certified safety standards.</p>
+
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/rafting1.jpg" alt="Group navigating rapids in a raft">
+                    <figcaption>Teamwork on the rapids</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting2.jpg" alt="Raft preparing for launch">
+                    <figcaption>Gearing up for adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting3.jpg" alt="Rafters celebrating after a run">
+                    <figcaption>High-fives after the rush</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting4.jpg" alt="Raft descending a rapid">
+                    <figcaption>Heart-pounding descent!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting5.jpg" alt="Group enjoying calm river stretch">
+                    <figcaption>Peaceful moments between rapids</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <!-- 5. FOOTER with social icons right-aligned & horizontal -->
+    <footer>
+        <p>©2026 🌴 Rafting Trancura Chile 🌴 Pucón, Chile</p>
+        <nav class="socialmedia" aria-label="Social Media Links">
+            <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src="images/facebook.jpg" alt="Facebook">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
