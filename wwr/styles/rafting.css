@@ -45,6 +45,8 @@ article {
 
 .hero {
     position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .hero h1 {
@@ -63,6 +65,8 @@ article {
     width: 100%;
     height: auto;
 }
+
+.overlay {}
 
 .hero article img {
     float: right;
