@@ -1,4 +1,5 @@
 :root {
+    --third-color: #27a4ad;
     --primary-color: #f9f904;
     --secondary-color: #ff0000;
     --accent1-color: #010000;
@@ -7,7 +8,7 @@
 }
 
 header {
-    background-color: var(--secondary-color);
+    background-color: var(--third-color);
     color: var(--accent1-color)
 }
 
