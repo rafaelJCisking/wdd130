@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            min-height: 400px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <a href="#" style="color: white; margin: 0 10px;">Home</a>
+            <a href="#" style="color: white; margin: 0 10px;">About</a>
+            <a href="#" style="color: white; margin: 0 10px;">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <form>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <label for="usearemail">Email:</label>
+            <input type="email" id="useremail" name="useremail" required>
+            <label for="quantity">Select Quantity</label>
+            <select name="quantity" id="quantity">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <label for="browser">What is your favorite internet browser?</label>
+            <select id="browser" name="browser">
+                <option value="chrome">Chrome</option>
+                <option value="firefox">Firefox</option>
+                <option value="edge">Edge</option>
+                <option value="brave">Brave</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="pet">Do you have a household pet?</label>
+            <input type="checkbox" id="pet" name="pet">
+            <label for="feedback">List the places you have lived:</label>
+            <textarea id="feedback" name="feedback" rows="4"
+              placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+
+        </form>
+        <button type="submit">Submit Poll</button>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

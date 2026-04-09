@@ -6,78 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Rafting Trancura Chile</title>
     <link rel="stylesheet" href="styles/rafting.css">
-    <meta name="description" content="Rafting Trancura Chile 's webpage for booking rides">
+    <meta name="description" content="Rafting Trancura Chile's webpage for booking rides">
     <meta name="author" content="Rafael Valdes">
+
 </head>
 
 <body>
     <header>
-        <img src="images/z-splash.png" alt="logo">
-        <nav>
+        <img src="images/z-splash.png" alt="Rafting Trancura Chile logo">
+        <nav aria-label="Main navigation">
             <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
+            <a href="about.html" aria-current="page">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+
     <main>
-        <div class="hero">
-            <img src="images/profile1.jpg" alt="A picture of Rafting Trancura Chile." width="200">
+        <section class="hero">
+            <img src="images/profile1.jpg" alt="Team member from Rafting Trancura Chile" width="200"
+              height="200">
             <h1>Rafting Trancura Chile</h1>
-            <p>Live the Adventure in Pucon</p>
-            <article>
-                <h2>Lets go</h2>
-                <img src="images/profile2.jpg" alt="A picture of the river Trancura.">
-                <p>We are a company that love nature and outdoors sports, join us in this
-                    incredible adventures, here in Rafting Trancura Chile we specialized in your
-                    safety. We enjoy the fresh summer breeze, We are from south of Chile.</p>
-            </article>
-        </div>
-        <section>
-            <h2>History</h2>
-            <p>This river is one of the most difficult categories. People around the world comes to
-                visit</p>
+            <p>Live the Adventure in Pucón</p>
         </section>
-        <section>
+
+        <article>
+            <h2>About Our Company</h2>
+            <img src="images/profile2.jpg" alt="Scenic view of the Trancura River" width="600"
+              height="400">
+            <p>We are a company that loves nature and outdoor sports. Join us on incredible
+                adventures! At Rafting Trancura Chile, we specialize in your safety. We enjoy the
+                fresh summer breeze and are proud to be from the south of Chile.</p>
+        </article>
+
+        <section id="history">
+            <h2>Our History</h2>
+            <p>The Trancura River, nestled in the heart of Chile's Lake District near Pucón, has
+                been a premier destination for white-water rafting since the 1990s. Classified as
+                Class III-IV rapids, it offers an exhilarating yet accessible challenge for
+                adventurers worldwide.</p>
+            <p>Founded by local guides with decades of river experience, Rafting Trancura Chile
+                began as a small family operation. Today, we proudly share our passion for the
+                Andes, combining expert instruction with deep respect for the environment. Every
+                rapid tells a story — and we're honored to be part of yours.</p>
+        </section>
+
+        <section class="adventure">
             <h2>Adventure Awaits You!</h2>
+            <p>The Trancura River is one of the most challenging and exciting rafting destinations
+                in South America. Adventurers from around the world come to experience its powerful
+                rapids and breathtaking Andean scenery.</p>
 
-            <figure>
-                <img src="images/rafting1.jpg" alt="Grupo going down balsa">
-                <figcaption>Rafting in fast waters</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/rafting2.jpg" alt="Balsa in Trancura river">
-                <figcaption>Getting ready for the Adventure</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/rafting3.jpg" alt="Raft in Trancura river">
-                <figcaption>All greetings</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/rafting4.jpg" alt="Raft in the river">
-                <figcaption>Going down fast!!</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/rafting5.jpg" alt="People in the river">
-                <figcaption>Great day today</figcaption>
-            </figure>
+            <div class="gallery">
+                <figure>
+                    <img src="images/rafting1.jpg" alt="Group navigating rapids on a raft">
+                    <figcaption>Rafting in fast waters</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting2.jpg"
+                      alt="Raft preparing to launch on the Trancura River">
+                    <figcaption>Getting ready for the adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting3.jpg" alt="Team celebrating on the raft">
+                    <figcaption>All greetings from the river!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting4.jpg" alt="Raft descending a rapid">
+                    <figcaption>Going down fast!!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting5.jpg" alt="Happy rafters enjoying the river">
+                    <figcaption>Great day on the water</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>©2026 🌴 Rafting Trancura Chile 🌴 Pucon, Chile</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook Icon">
+        <p>©2026 🌴 Rafting Trancura Chile 🌴 Pucón, Chile</p>
+        <nav class="socialmedia" aria-label="Social media links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook.png" alt="Visit us on Facebook">
             </a>
-            <a href="https://linkdin.com">
-                <img src="images/linkedin.png" alt="Linkedin Icon">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin.png" alt="Connect with us on LinkedIn">
             </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Instagram Icon">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram.png" alt="Follow us on Instagram">
             </a>
         </nav>
     </footer>

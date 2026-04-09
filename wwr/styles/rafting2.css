@@ -249,74 +249,74 @@ section + section {
 }
 
 /* === RESPONSIVE DESIGN === */
-@media (max-width: 768px) {
-    header {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 1rem;
-    }
+@media (max-width: 768px) {}
 
-    header img {
-        grid-column: 1;
-        margin: 0 auto;
-    }
-
-    nav {
-        grid-column: 1;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-    }
-
-    nav a {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.9rem;
-    }
-
-    main {
-        padding: 1rem;
-    }
-
-    .hero {
-        padding: 1.5rem;
-    }
-
-    .hero img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .adventure-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 1.5rem 1rem;
-    }
-
-    .socialmedia {
-        justify-content: center;
-    }
+header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1rem;
 }
 
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 1.5rem;
-    }
+header img {
+    grid-column: 1;
+    margin: 0 auto;
+}
 
-    .hero p {
-        font-size: 1rem;
-    }
+nav {
+    grid-column: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
 
-    section h2 {
-        font-size: 1.3rem;
-    }
+nav a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+}
 
-    figure img {
-        height: 120px;
-    }
+main {
+    padding: 1rem;
+}
+
+.hero {
+    padding: 1.5rem;
+}
+
+.hero img {
+    width: 150px;
+    height: 150px;
+}
+
+.adventure-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.socialmedia {
+    justify-content: center;
+}
+
+@media (max-width: 480px) {}
+
+.hero h1 {
+    font-size: 1.5rem;
+}
+
+.hero p {
+    font-size: 1rem;
+}
+
+section h2 {
+    font-size: 1.3rem;
+}
+
+figure img {
+    height: 120px;
 }
 
 /* === ACCESSIBILITY & FOCUS STATES === */
@@ -340,4 +340,8 @@ button:focus {
 
 .skip-link:focus {
     top: 0;
+}
+
+.site-header {
+    grid-template-columns: 1fr 1fr 1fr;
 }
