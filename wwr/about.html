@@ -81,6 +81,28 @@
                 </figure>
             </div>
         </section>
+        <section id="booking">
+            <h2>Book Your Rafting Experience</h2>
+            <form action="/enviar-reserva" method="POST">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="John Doe">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="group-size">Number of Participants:</label>
+                <input type="number" id="group-size" name="group_size" min="1" max="20" required>
+
+                <label for="message">Questions or Special Requests:</label>
+                <textarea id="message" name="message" rows="4"
+                  placeholder="Allergies, experience level, etc."></textarea>
+
+                <button type="submit">Send Booking Request</button>
+            </form>
+        </section>
     </main>
 
     <footer>
